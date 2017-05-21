@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Music History</title>
+      <link rel="stylesheet" type="text/css" href="materialize/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="">
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <header>
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center">Rythe Vibes</a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="#modal1">Add Music</a></li>
+                  <!-- Dropdown Trigger -->
+                  <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><span id="sortByText">Sort By</span><i class="material-icons right"></i></a></li>
+                  <li><input id="search" type="search" placeholder="search"></li>
+              </ul>
+              <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="#!" value="Artist" class="filterKeySelect">Artist</a></li>
+                  <li><a href="#!" value="Album" class="filterKeySelect">Album</a></li>
+                  <li><a href="#!" value="Genre" class="filterKeySelect">Genre</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div>
+            <div id="song-list" class="container">
+            </div>
+        </div>
+        <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Rythe Music
+            </div>
+          </div>
+        </footer>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Add A Song</h4>
+              <label>Song Name:  <input type="text" name="Song Name" id="new-song"></label>
+              <label>Artist:  <input type="text" name="Artist" id="new-artist"></label>
+              <label>Album:  <input type="text" name="Album" id="new-album"></label>
+              <label>Genre:  <input type="text" name="Genre" id="new-genre"></label>
+            </div>
+            <div class="modal-footer">
+              <a id="new-song-button" class="modal-action modal-close waves-effect waves-green btn-flat">Add Song</a>
+            </div>
+      </div>
+        <script src="materialize/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="materialize/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="dist/app.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
