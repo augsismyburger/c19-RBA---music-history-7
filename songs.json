@@ -1,0 +1,124 @@
+[
+    {
+
+        "title" : "O' Be Joyful",
+        "artist" : "Shovels & Rope",
+        "album" : "O' Be Joyful",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Wrapped In Piano Strings",
+        "artist" : "Radical Face",
+        "album" : "Ghost",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Cruel World",
+        "artist" : "Phantogram",
+        "album" : "Three",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Alone",
+        "artist" : "Heart",
+        "album" : "Bad Animals",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Wake Me",
+        "artist" : "Bleachers",
+        "album" : "Strange Desire",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Ritual Union",
+        "artist" : "Little Dragon",
+        "album" : "Ritual Union",
+        "genre" : "rock"
+    },
+    {
+        "title" : "Bad Moon Rising",
+        "artist" : "Creedence Clearwater Revival",
+        "album" : "Green River",
+        "genre" : "rock"
+    },
+    {
+        "title" : "All Along the Watchtower",
+        "artist" : "Jimi Hendrix",
+        "album" : "Electric Lady",
+        "genre" : "rock"
+    },
+    {
+        "title" : "Pony",
+        "artist" : "Ginuwine",
+        "album" : "From Doo-Wop to Hip-Hop",
+        "genre" : "r&b"
+    },
+    {
+        "title" : "Hey Hey What Can I Do",
+        "artist" : "Led Zeppelin",
+        "album" : "Coda",
+        "genre" : "rock"
+    },
+    {
+
+        "title" : "You Can Call Me Al",
+        "artist" : "Paul Simon",
+        "album" : "Graceland",
+        "genre" : "rock"
+    },
+    {
+        "title" : "Tell Her About It",
+        "artist" : "Billy Joel",
+        "album" : "An Innocent Man",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Somebody's Baby",
+        "artist" : "Jackson Browne",
+        "album" : "The Next Voice You Hear",
+        "genre" : "pop"
+    },
+    {
+        "title" : "All Of A Sudden",
+        "artist" : "Joe Walsh",
+        "album" : "Ordinary Average Guy",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Forver Young",
+        "artist" : "Rod Stewart",
+        "album" : "Out Of Order",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Reelin' In The Years",
+        "artist" : "Steely Dan",
+        "album" : "Can't Buy A Thrill",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Don't Worry Baby",
+        "artist" : "The Beach Boys",
+        "album" : "Shut Down Vol. 2",
+        "genre" : "pop"
+    },
+    {
+        "title" : "Killer Whales",
+        "artist" : "James Vincent McMorrow",
+        "album" : "We Move",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Can I Stay",
+        "artist" : "Ray LaMontagne",
+        "album" : "Till The Sun Turns Black",
+        "genre" : "alt"
+    },
+    {
+        "title" : "Come on Make It Right Once",
+        "artist" : "Beta Radio",
+        "album" : "Colony of Bees",
+        "genre" : "alt"
+    }
+]

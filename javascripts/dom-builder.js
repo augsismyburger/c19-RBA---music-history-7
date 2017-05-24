@@ -1,11 +1,16 @@
 "use strict";
 
-function writeMusic(data) {
-    for (var i in data) {
-        console.log("write music data", data[i]);
 
-        $('#song-list').append(`<div class="col s12 m6">
-          <div class="card blue-grey">
+
+function writeMusic(data) {
+    let keyArray = Object.keys(data);
+    let counter = 0;
+    $('#song-list').html('');
+
+    for (var i in data) {
+    // console.log("keyArray", keyArray[i]);
+        $('#song-list').append(`<div class="col s12 m6 z-depth-3">
+          <div class="card purple darken-4">
             <div class="card-content white-text">
               <span class="card-title">${data[i].title}</span>
               <p>Artist: ${data[i].artist}</p><br>
@@ -13,43 +18,52 @@ function writeMusic(data) {
               <p>Genre: ${data[i].genre.toUpperCase()}</p>
             </div>
             <div class="card-action">
-              <a id="toDelete">Delete Song</a>
-              <a id="editSong">Edit Song</a>
+              <a href="#editModal" keyId="${keyArray[counter]}" class="editSong waves-effect waves-light btn black white-text">Edit Song</a>
+              <a href="#" keyId="${keyArray[counter]}" class="songDelete waves-effect waves-light btn black white-text">Delete Song</a>
             </div>
           </div>
         </div>`);
+        data[i].id = keyArray[counter];
+        counter ++;
     }
+    $('#editModal').modal();
 }
 
-function writeNewSong(data) {
-    $('#song-list').append(`<div class="col s12 m6">
-          <div class="card blue-grey">
-            <div class="card-content white-text">
-              <span class="card-title">${data.title}</span>
-              <p>Artist: ${data.artist}</p><br>
-              <p>Album: ${data.album}</p><br>
-              <p>Genre: ${data.genre.toUpperCase()}</p>
-            </div>
-            <div class="card-action">
-              <a id="toDelete">Delete Song</a>
-              <a id="editSong">Edit Song</a>
-            </div>
-          </div>
-        </div>`);
-}
-
-function getNewSong() {
-    // GRABBING NEW SONGS FROM DOM INPUT
-    function MakeMusic(title, artist, album, genre) {
+ function MakeMusic(title, artist, album, genre) {
         this.title = title;
         this.artist = artist;
         this.album = album;
         this.genre = genre;
     }
 
-    let song = new MakeMusic($('#new-song').val(), $('#new-artist').val(), $('#new-album').val(), $('#new-genre').val());
+
+function getNewSong() {
+    // GRABBING NEW SONGS FROM DOM INPUT
+   
+    let song = new MakeMusic($('.add-song').val(), $('.add-artist').val(), $('.add-album').val(), $('.add-genre').val());
+
+    $('.add-song').val("");
+    $('.add-artist').val("");
+    $('.add-album').val("");
+    $('.add-genre').val("");
+    return song;
+}
+
+function getEditSong(data) {
+    // GRABBING NEW SONGS FROM DOM INPUT
+    let song = new MakeMusic($('.git-song').val(), $('.git-artist').val(), $('.git-album').val(), $('.git-genre').val());
+    console.log('this is the edited song', song);
 
     return song;
 }
 
-module.exports = {writeMusic, getNewSong, writeNewSong};
+function fillForm(data) {
+  console.log('fillform', data);
+    $('.git-song').val(data.title);
+    $('.git-artist').val(data.artist);
+    $('.git-album').val(data.album);
+    $('.git-genre').val(data.genre);
+}
+
+module.exports = {writeMusic, getNewSong, getEditSong, fillForm};
+
